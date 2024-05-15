@@ -1,0 +1,88 @@
+Basic Overview of the class
+
+- Introduction
+- what is frontend 
+- what we mean by UI
+- What is command prompt and why do we even need to know it.
+- Briefly discussed that each Operating system has its own Command prompt and syntax of the commands may differ based on the Operating system.
+- We also discussed that the command prompt is all about loactions or paths.
+- Any command that u write is executed in a specific location/path.
+- We discussed different commands such as :
+
+Move inside a particular folder :
+
+- command : cd <name of the folder>
+- explain : cd stands for change directory (directory is another name for folder)
+			since we want to move inside a folder or CHANGE our location to some other folder/directory, we use cd <folder_name>.
+			
+			Note : IF we try to move into a folder which does not exist in the current location, then we get an error:
+			Path does not exist
+			
+- command : cd ..
+- explain : cd stands for change directory (directory is another name for folder)
+			.. in (cd ..) represents the parent of the folder u are currently in.
+			when we do cd .. in a particular folder, we just come out of the folder or move up to the parent folder.
+			
+Note : the above 2 commands take one step forward and one step back respectively. If u want to take multiple steps forward or backward, u can perform chaning in the following way
+
+lets say u are in users folder and u want to go inside in the following way :
+
+users->folder1->folder2
+
+to move from user to folder2 in just 1 command, just chain the cd commands: 
+
+users> cd folder1/folder2
+
+Similarly to move multiple steps back, u can chain the cd .. command as well.
+
+lets say u want to move from folder2-> users (backward)
+
+folder2> cd../..
+			
+The above 2 commands are generic to all command prompts and are universally used!
+
+Then we discussed that mostly linux commands are used, so its practical that we move to a linux based command prompt.
+Obviously we didnot download the linux OS, but rather we just used the git terminal since it is linux oriented.
+
+- command : pwd
+- explain : stands for 'present working directory'
+			as mentioned before, directory means folder. so when u write pwd, u are technically asking the system in which folder are u presently located.
+This may seem quite useless as the command prompt already shows u the present working location itself.
+
+
+- command : pwd
+- explain : The **`ls`** (list) command in a command-line interface or terminal is used to list the contents of a directory/folder. 
+			It's an essential command for viewing files and directories within the current working directory.
+
+- command : mkdir <folder name>
+- explain : mkdir => mk + dir => make directory or => make a folder
+			So as the name suggests, the mkdir command is used to make a folder and thats it
+			Note: the folder name should be unique and no other folder with the same name should not already exist.
+			Also please dont confuse this with files. U cannot use this to create files!!
+			
+			
+			
+- command : rmdir <folder name>
+- explain : rmdir => rm + dir => remove directory or => make a folder
+			So as the name suggests, the rmdir command is used to remove a folder in the present working directory and thats it
+			note th folder name should be unique and no other folder with the same name should not already exist.
+			
+			
+- command : touch <file name>
+- explain : makes an empty file in the pwd.
+
+- command : nano <file name>
+- explain : allows to edit files.
+
+- command : cat <file name>
+- explain : shows file content.
+
+- command : mv source destination
+- explain : the mv command is used to move both files and directories. 
+			It's also commonly used to rename files or directories by essentially 	"moving" them to a new name within the same directory.
+
+
+
+			
+			
+
