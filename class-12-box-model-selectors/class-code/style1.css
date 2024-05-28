@@ -1,0 +1,35 @@
+#id1
+{
+    background-color: red;
+    border: 20px solid blue; 
+    padding: 20px;
+    margin: 30px;
+}
+
+#id2
+{
+    background-color: blue;
+    border: 20px solid red; 
+    padding: 20px;
+    /* margin: 20px; */
+    /* margin-top: 80px; */
+    margin: 10px 20px 30px 40px;
+    
+}
+
+
+*{
+    margin: 0;
+}
+
+article p {
+    font-style: italic;
+}
+
+
+p:focus {
+    border: 2px solid blue;
+}
+
+
+

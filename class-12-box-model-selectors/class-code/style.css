@@ -1,0 +1,24 @@
+/* #head1
+{
+    background-color: red;
+}
+
+
+h1{
+    background-color: bisque;
+}
+
+p{
+    background-color: rgb(125, 44, 50);
+}
+
+.c1{
+    background-color: blue;
+} */
+
+
+*{
+    background-color: bisque;
+}
+
+
