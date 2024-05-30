@@ -1,0 +1,56 @@
+#id1{
+    font-size: 40px;
+    /* color: red; */
+    background-color: red;
+}
+
+
+#id2{
+    font-size: 40px;
+    /* color: red; */
+    background-color: rgb(85, 34, 225);
+}
+
+
+#id3{
+    font-size: 40px;
+    /* color: red; */
+    background-color: #1ed831;
+}
+
+#id4{
+    font-size: 40px;
+    /* color: red; */
+    background-color: hsl(120, 9%, 33%);
+}
+
+h1{
+    font-size: 40px;
+    text-shadow: -3px -3px 5px red;
+}
+
+.overflow
+{
+    border: 3px solid;
+    width:80%;
+    height: 75px;
+    overflow: auto;
+    /* overflow: clip;
+    overflow-clip-margin: 200px; */
+    line-height: 100px;
+    
+}
+
+.box1{
+    text-align: right;
+    width: 50%;
+    height: 100px;
+    background-color: #1ed831;
+    /* border: 2px solid black; */
+    box-shadow: 3px 3px 5px;
+    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;  
+}
