@@ -1,0 +1,59 @@
+button:active {
+    background-color: red;
+}
+
+input:focus {
+    /* border: 2px dotted blue; */
+    background-color: yellow;
+    
+}
+
+input {
+    outline: none;
+}
+
+ul li:nth-child(3) {
+    background-color: red;
+}
+
+
+/* p:before {
+    content: "Note: ";
+    font-weight: bold;
+} */
+
+
+
+pre::first-line {
+    font-weight: bold;
+    color: blue;
+}
+
+.px1{
+    background-color: red;
+    width: 50px;
+}
+
+.percent1{
+    background-color: blue;
+    width: 50%;
+}
+
+
+.vp1{
+    background-color: blue;
+    width: 50vw;
+}
+
+p{
+    font-size: 2rem;
+}
+
+html{
+    font-size: 20px;
+}
+
+
+
+
+
