@@ -1,6 +1,15 @@
 .pbox{
     border: 2px solid black;
     background-color: burlywood;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap ; */
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* align-content: flex-start; */
+    
    
 }
 
@@ -10,6 +19,7 @@
     height: 20%;
     padding: 2px;
     margin: 10px;
+    
 }
 
 
@@ -20,12 +30,17 @@
 
 #id2{
     background-color: orange;
+    order: 2;
 }
 
 #id3{
     background-color: blue;
+    flex-shrink: -1;
+    /* flex-grow: 10; */
 }
 
 #id4{
     background-color: thistle;
+    order: -1;
+    align-self: center;
 }
