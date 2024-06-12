@@ -1,0 +1,28 @@
+.container{
+    width: 2000px;  
+    height: 2000px;
+    background-color: lightcoral;
+}
+
+.box1{
+    width: 10%;  
+    height: 10%;
+    background-color: blue;
+    transition-property: transform;
+    transition-duration: 3s;
+   
+}
+
+
+
+.triggerViaClass:hover{
+    
+    transform: translateX(500px) translateY(500px);
+    
+}
+
+/* .triggerViaClass{
+    
+    transform: translateX(500px) translateY(500px);
+    
+} */

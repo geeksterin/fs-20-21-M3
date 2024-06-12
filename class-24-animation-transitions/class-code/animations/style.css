@@ -1,0 +1,93 @@
+.box1{
+    width: 100px;  
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: anime1, anime2,anime4;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate; 
+    /* animation-timing-function: linear(0 0%, 1.03 61.97%, 1 100%); */
+    animation-timing-function: linear;
+    /* animation-timing-function: ease-in-out; */
+    /* animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0); */
+    /* animation-fill-mode : backwards; */
+}
+
+
+
+/* @keyframes anime1
+{
+    from{
+        left: 100px;
+        left: 0%;
+        top :50px;
+        background-color: yellow;
+    }
+    to{
+        left: 800px;
+        left: 60%;
+        top: 1000px;
+        background-color: red;
+    }
+} */
+
+
+@keyframes anime1
+{
+    0%{
+        left: 0%;
+        top:0px;
+    }
+    50%{
+        /* left: 100px; */
+        left: 50%;
+        top:0px;
+        /* top :50px; */
+        /* background-color: yellow; */
+    }
+    100%{
+        /* left: 800px; */    
+        left: 50%;
+        top: 1800px;
+        /* background-color: red; */
+    }
+}
+
+@keyframes anime2
+{
+    from{
+       transform: scale(1) rotate(0deg);
+    }
+    to{
+        transform: scale(5) rotate(360deg);
+    }
+}
+
+
+/* @keyframes anime3
+{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+
+@keyframes anime4
+{
+    0%{
+      background-color: yellow;
+    }
+    50%{
+       background-color: black;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+
