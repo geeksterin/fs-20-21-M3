@@ -1,0 +1,63 @@
+.box1{
+    background-color: lightblue ;
+    width: 400px;
+    height: 400px;
+}
+
+/* @media (width <= 1250px) or (width >= 800px) {
+    .box1{
+        background-color: rgb(204, 171, 26) ;
+    }
+  } */
+
+
+  /* @media (min-width: 600px) {
+    .box1{
+        background-color: rgb(204, 171, 26) ;
+    }
+  } */
+  
+  
+  /* @media (max-width: 600px) {
+    .box1{
+        background-color: rgb(204, 171, 26) ;
+    }
+  } */
+  
+  
+ 
+  
+  .container{
+    background-color: lightblue ;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    gap: 1rem;       
+  }
+  
+  .items{
+    background-color: red ;
+    width: 20%;
+    height: 20%;
+   
+   
+}
+  
+  
+@media (min-width: 600px) and (max-width: 1200px) {
+    .box1{
+        background-color: rgb(204, 171, 26) ;
+    }
+    
+    .container{
+       flex-direction: column;   
+      }
+      
+    
+    
+    
+  }
+
+
+
+  

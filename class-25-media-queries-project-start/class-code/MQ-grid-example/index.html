@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout Example</title>
+  <style>
+    /* Default styles */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+      gap: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    
+    .grid-item {
+      background-color: #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Media queries for responsive layout */
+    @media screen and (max-width: 600px) {
+      /* For smaller screens, 2 columns */
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+      /* For screens between 601px and 900px wide in portrait orientation */
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    
+    @media screen and (min-width: 901px) and (max-width: 1200px) {
+      /* For screens between 901px and 1200px wide */
+      .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    @media screen and (min-width: 1201px) {
+      /* For larger screens, 5 columns */
+      .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+    <div class="grid-item">Item 5</div>
+    <div class="grid-item">Item 6</div>
+    <div class="grid-item">Item 7</div>
+    <div class="grid-item">Item 8</div>
+    <div class="grid-item">Item 9</div>
+    <div class="grid-item">Item 10</div>
+  </div>
+</body>
+</html>
