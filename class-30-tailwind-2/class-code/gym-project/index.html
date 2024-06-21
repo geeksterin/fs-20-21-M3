@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mainak-gym-class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <nav
+      class="w-full h-5 absolute top-0 z-50 flex flex-wrap justify-between items-center px-2 py-3 border border-gray-950 bg-black"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap justify-between items-center border border-gray-950"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
+            href=""
+            >The November Room</a
+          >
+          <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="hidden lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none border border-gray-950"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <!--Icon 1-->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href=""
+                ><i
+                  class="text-orange-500 fab fa-facebook text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
+              >
+            </li>
+            <!--Icon 2-->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href=""
+                ><i
+                  class="text-orange-500 fab fa-twitter text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+              >
+            </li>
+            <!--Icon 3-->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href=""
+                ><i
+                  class="text-orange-500 fab fa-linkedin text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Profile</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="home"
+      style="min-height: 95vh"
+      class="relative content-center flex items-center justify-center pt-16 pb-32"
+    >
+      <div
+        class="absolute top-0 w-full h-full bg-top bg-cover"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80');
+        "
+      >
+        <!-- The following element is uised as a filter on the background image of the home section, change bg-color and opacity to experiment -->
+        <span class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+
+      <!-- Dont have to go for relative positioning , could utilise z index as well -->
+      <div class="container relative mx-auto border border-white-950">
+        <div class="flex flex-wrap items-center">
+          <div
+            class="w-full text-center px-4 lg:w-6/12 mr-auto ml-auto border border-neutral-50"
+          >
+            <h1 class="text-white font-semibold text-5xl">
+              Feel the <span class="text-orange-500">Power</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-300">
+              Welcome to The November Room. We are a fitness and training center
+              that focuses on pushing you to your absolute limit. Download our
+              complete brochure to get started today!
+            </p>
+            <a
+              href=""
+              class="bg-transparent hover:bg-orange-500 text-blue-500 font-semibold hover:text-white p-4 border border-orange-500 hover:border-transparent mt-5 cursor-pointer rounded inline-block"
+              >Download Brochure</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section id="about" class="bg-black text-white px-8">
+      <div class="flex flex-wrap items-start justify-center">
+        <div class="w-4/12 mr-auto">
+          <img
+            src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            class="rounded-lg mr-7 ml-7"
+          />
+        </div>
+
+        <div class="w-5/12 pt-10">
+          <small class="text-orange-600">About our gym</small>
+          <h3 class="text-4xl">SAFE BODY BUILDING</h3>
+          <p class="mt-4 text-lg">
+            The extension comes with three pre-built pages to help you get
+            started faster. You can change the text and images and you're good
+            to go.
+          </p>
+
+          <div class="mt-10">
+            <i class="fab fa-facebook text-orange-800 text-lg leading-lg"></i
+            ><span class="text-xl">latest & gratest gym equipment</span>
+          </div>
+
+          <div class="mt-10">
+            <i class="fab fa-facebook text-orange-800 text-lg leading-lg"></i
+            ><span class="text-xl">latest & gratest gym equipment</span>
+          </div>
+
+          <div class="mt-10">
+            <i class="fab fa-facebook text-orange-800 text-lg leading-lg"></i
+            ><span class="text-xl">latest & gratest gym equipment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-black text-white px-8">
+      <div class="flex flex-wrap flex-col lg:flex-row items-start justify-center">
+        <div class="w-4/12 mr-auto">
+          <img
+            src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            class="rounded-lg mr-7 ml-7 border border-white-950"
+          />
+        </div>
+
+        <div class="w-5/12 pt-10">
+          <!-- <small class="text-orange-600">About our gym</small> -->
+          <h3 class="text-4xl uppercase underline">About our gym</h3>
+          <br>
+          <h3 class="text-2xl">SAFE BODY BUILDING</h3>
+          <p class="mt-4 text-lg">
+            The extension comes with three pre-built pages to help you get
+            started faster. You can change the text and images and you're good
+            to go.
+          </p>
+
+          <div class="mt-10">
+            <i class="fab fa-facebook text-orange-800 text-lg leading-lg"></i
+            ><span class="text-xl">latest & greatest gym equipment</span>
+          </div>
+
+          <div class="mt-10">
+            <i class="fab fa-facebook text-orange-800 text-lg leading-lg"></i
+            ><span class="text-xl">latest & greatest gym equipment</span>
+          </div>
+
+          <div class="mt-10">
+            <i class="fab fa-facebook text-orange-800 text-lg leading-lg"></i
+            ><span class="text-xl">latest & greatest gym equipment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <!-- <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0px);"
+      >
+      </div> -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:   px-4">
+            <h4 class="text-3xl font-semibold">Follow us on Social Media</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div class="mt-6">
+              <button
+                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-twitter"></i></button
+              ><button
+                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-facebook-square"></i></button
+              ><button
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-dribbble"></i></button
+              ><button
+                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2020 THE NOVEMBER ROOM
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/22748096c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
