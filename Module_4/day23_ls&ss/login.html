@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>LogIn Page</h1>
+    </div>
+
+    <div class="form_Container">
+
+        <form action="./home.html" name="RegForm" onsubmit="return validateForm()">
+
+            <table>
+                <tr>
+                    <td id="row">Email</td>
+                    <td> <input type="email" name="EMail" placeholder="a@gmail.com"></td>
+                </tr>
+               
+                <tr>
+                    <td id="row">Password</td>
+                    <td> <input type="password" name="Password" placeholder="******"></td>
+                </tr>
+            </table>
+        <!-- </form> -->
+
+    </div>
+
+    <div class="submit">
+        <input type="submit" class="input1" value="Login" name="Submit" />
+    </div>
+</form>
+<script src="./login.js"></script>
+</body>
+</html>

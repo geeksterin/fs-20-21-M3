@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Gemini Clone</h1>
+    <main>
+      <div id="msg-container">
+        <div class="user-msg">USER:- Hello Gemini!!</div>
+        <div class="bot-msg">BOT:- Hello, How I can Help You ?</div>
+      </div>
+
+      <div class="user-input-div">
+        <input
+          type="text"
+          name=""
+          class="user-input"
+          placeholder="Ask something, Anything"
+        />
+        <button class="btn">Search With Gemini</button>
+      </div>
+    </main>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+
+    <script type="module">
+      import { GoogleGenerativeAI } from "@google/generative-ai";
+    //   let API_KEY = "AIzaSyA9j_aLpVhvoRtFdNxNEp0AQMgwl4aWc00";
+      const genAI = new GoogleGenerativeAI(API_KEY);
+      let btn = document.querySelector(".btn");
+      let messageContainer = document.querySelector("#msg-container");
+
+      async function getGeminiResponse() {
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        let userInput = document.querySelector(".user-input").value;
+
+        const prompt = userInput;
+
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        const text = response.text();
+        console.log(text);
+
+        let botMessage = document.createElement("div");
+        botMessage.innerText = text;
+        messageContainer.appendChild(botMessage)
+      }
+      // console.log(btn);
+      btn.addEventListener("click", getGeminiResponse);
+    </script>
+  </body>
+</html>

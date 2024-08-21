@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation with Anime.js</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+        border-radius: 50%;
+        margin: 25px;
+        position: relative;
+        animation: box 2s ease-in-out infinite;
+      }
+
+      /* @keyframes box{
+            0%{
+                transform: scale(1,1);
+                background-color: cyan;
+                border-radius: 50%;
+            }
+            50%{
+                transform: scale(1.5,1.5);
+                background-color: red;
+                border-radius: 0%;
+            }
+            100%{
+                transform: scale(1,1);
+                background-color: cyan;
+                border-radius: 50%;
+            }
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- <h1 class="animate__animated animate__zoomOutDown animate__infinite infinite">Animation with Anime.js 🔥</h1> -->
+    <h1 id="head1">Animation with Anime.js 🔥</h1>
+    <div id="div1"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+
+    <script>
+      let ball = document.getElementById("div1");
+      console.log(ball);
+      anime({
+        targets:ball,
+        translateX: 250,
+        width:'100%',
+        duration:4000,
+        loop:true,
+        easing: 'easeInOutExpo'
+      })
+    </script>
+  </body>
+</html>

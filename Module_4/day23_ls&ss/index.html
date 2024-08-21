@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<title>Registration From</title>
+<link rel="stylesheet" href="register.css" />
+<html>
+
+<body>
+    <div class="heading">
+        <h1>Register</h1>
+    </div>
+
+    <div class="form_Container">
+
+        <form action="./login.html" name="RegForm" onsubmit="return validateForm()">
+
+            <table>
+                <tr>
+                    <td id="row">Full Name</td>
+                    <td> <input type="text" name="Name" placeholder="Anne Humter"></td>
+                </tr>
+                <tr>
+                    <td id="row">Email</td>
+                    <td> <input type="email" name="EMail" placeholder="anne.humter@mail.com"></td>
+                </tr>
+                <tr>
+                    <td id="row">Password</td>
+                    <td> <input type="password" name="Password" placeholder="******"></td>
+                </tr>
+                <tr>
+                    <td id="row">Confirm Password</td>
+                    <td> <input type="password" name="Confirm" placeholder="******"></td>
+                </tr>
+            </table>
+        <!-- </form> -->
+
+    </div>
+
+    <div class="submit">
+        <input type="submit" class="input1" value="Register" name="Submit" />
+    </div>
+</form>
+<script src="./script.js"></script>
+</body>
+
+</html>
