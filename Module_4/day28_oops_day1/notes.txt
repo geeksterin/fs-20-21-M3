@@ -1,0 +1,24 @@
+OOP => Object Oriented Programming
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorhipsm
+
+Class : variables & functions
+Class : It is colleciton of data members & member functions
+
+Rules of Class
+1. No var let or const all variables should start with "this."
+2. constructor is a special function built-in the class.
+
+this => A keyword which represents context
+
+
+Call, Bind and Apply => Methods/ Fns to deal with (change the context) this keyword in diffrent ways
+
+Bind -> Returns fn and changes this binding
+
+Call -> Calls the fn and takes arguments as comma seperated e.g greetUser(thisObj,"Hi","Mr")
+
+Apply -> Calls the fn and takes arguments as an array e.g greetUser(thisObj,["Hello","Miss"])
