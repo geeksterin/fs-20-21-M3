@@ -1,0 +1,12 @@
+Libraries? Lodash, ChartJS, jQuery, d3js,ReactJS , anime etc... (JS LIBRARIES AS AS MUCH AS THE STARS IN THE SKY) => Millions+
+Framework? Angular
+
+ES6 ? ECMA Script
+ES1
+ES2
+...
+ES13
+
+ES6
+var
+let & const
