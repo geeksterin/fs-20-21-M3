@@ -1,0 +1,21 @@
+OOP => Object Oriented Programming
+
+1. Encapsulation : Wrapping items in a single package like class
+2. Abstraction : Hiding of complex / unnecessary details inside a method / class etc 
+3. Inheritance : Passing the properties of a parent class into a child class
+4. Polymorhipsm(Method / Operator Overriding): Having more than one form
+
+###
+To use this class follow the instructions
+
+1. Create an instance of bank account using "new BankAccount()"
+2. Use the following method : 
+
+getBalance(): To get the current available balance in user's account
+withdrawMoney(amountToWithdraw): Pass the amount to be withdrwan as a parameter, the method will return the message (String)
+
+
+Animal : Parent Class, Base Class ,   Super Class
+Dog :    Child Class,  Derived Class, Sub Class
+
+Types of Inheritance
