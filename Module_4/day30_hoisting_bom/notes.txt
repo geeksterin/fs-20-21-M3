@@ -1,0 +1,14 @@
+Phases of Execution in JS
+
+1. Code is scanned for allocating the memory in RAM (Variables) (Memory Allocation Phase)
+2. Code is executed (Exection Phase)
+
+
+var => Global (undefined)
+let & const => Block (NO DEFAULT VALUE ASSIGNED "VALUE IS MISSING") -> TDZ (Temporal Dead Zone)
+
+
+"Moving declarations to the top if their scope"
+
+DOM (Document Object Model) => document
+BOM (Browser Object Model) => browser's window (window)
