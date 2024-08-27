@@ -1,0 +1,58 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+.logo {
+    max-width: 50px;
+}
+
+.bg-grey {
+    background-color: #E5E5E5;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.crypto-card {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    min-width: 300px;
+    align-items: center;
+    margin: 10px;
+}
+
+.crypto-card img {
+    width: 32px;
+    height: 32px;
+}
+
+.crypto-card .info-container {
+    padding: 0px 0px 0px 20px;
+}
+
+.crypto-card .info-container h3 {
+    margin: 0px;
+}
+
+.crypto-card .info-container span {
+    font-weight: bold;
+}
+
+#coinsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}

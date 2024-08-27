@@ -1,0 +1,6 @@
+Crypto View
+
+Modules (Parts)
+1. Home Screen
+2. Search Screen
+3. Detail Screen
