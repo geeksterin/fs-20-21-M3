@@ -1,0 +1,37 @@
+.main-section {
+    text-align: center;
+}
+
+#searchCryptoBtn {
+    height: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100px;
+}
+
+#inputBox {
+    width: 250px;
+    height: 30px;
+}
+
+.coin-card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+
+section {
+    padding: 20px;
+}
+
+.coin-card button {
+    margin-left: auto;
+    width: 150px;
+    height: 30px;
+    font-size: 22px;
+}
