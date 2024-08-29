@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="splide.min.js"></script> -->
     <title>Crypto View</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li>
-                    <img class="logo" src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png"
-                        alt="Crypto View Logo">
-                </li>
-                <li>
-                    <h1>Crypto View</h1>
-                </li>
-                <li>
-                    <button id="searchBtn">Search</button>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <img
+              id="webAppLogo"
+              class="logo"
+              src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png"
+              alt="Crypto View Logo"
+            />
+          </li>
+          <li>
+            <h1>Crypto View</h1>
+          </li>
+          <li>
+            <button id="searchBtn">Search</button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="bg-grey">
-        <div>
-            <h3>CryptoView</h3>
-            <p>A platform to view information about all cryptocurrencies live.</p>
-        </div>
-        <div>
-            <img src="https://aayusharyan.github.io/cryptoview-project/assets/images/main_image.svg" alt="Banner Image">
-        </div>
+      <div>
+        <h3>CryptoView</h3>
+        <p>A platform to view information about all cryptocurrencies live.</p>
+      </div>
+      <div>
+        <img
+          src="https://aayusharyan.github.io/cryptoview-project/assets/images/main_image.svg"
+          alt="Banner Image"
+        />
+      </div>
     </section>
     <div class="bg-grey">
-        <h3 class="align-center">Top Coins</h3>
-        <div id="coinsContainer"></div>
+      <h3 class="align-center">Top Coins</h3>
+      <div id="coinsContainer"></div>
     </div>
-    
-    <script defer src="./js/home.js"></script>
-</body>
 
+    <script src="./js/common.js"></script>
+    <script defer src="./js/home.js"></script>
+  </body>
 </html>

@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/search.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <title>Search Crypto Coins</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li>
-                    <img class="logo" src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png"
-                        alt="Crypto View Logo">
-                </li>
-                <li>
-                    <h1>Crypto View</h1>
-                </li>
-                <li>
-                    <button id="searchBtn">Search</button>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <img
+              id="webAppLogo"
+              class="logo"
+              src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png"
+              alt="Crypto View Logo"
+            />
+          </li>
+          <li>
+            <h1>Crypto View</h1>
+          </li>
+          <li>
+            <button id="searchBtn">Search</button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="main-section">
-        <h3>Search</h3> <br />
-        <form id="searchForm">
-            <input type="text" id="inputBox">
-            <button type="submit">Search</button>
-        </form>
+      <h3>Search</h3>
+      <br />
+      <form id="searchForm">
+        <input type="text" id="inputBox" />
+        <button type="submit">Search</button>
+      </form>
     </section>
 
-    <img id="loader" style="display: none;" src="loader.gif" alt="Loader" />
+    <img id="loader" style="display: none" src="images/loader.gif" alt="Loader" />
 
-    <section id="cardsContainer" class="bg-grey">
-       
-    </section>
+    <section id="cardsContainer" class="bg-grey"></section>
+    <script src="./js/common.js"></script>
     <script src="./js/search.js"></script>
-</body>
+  </body>
 </html>
