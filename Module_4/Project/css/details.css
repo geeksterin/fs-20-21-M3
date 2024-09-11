@@ -1,0 +1,18 @@
+.crypto-container {
+  display: flex;
+  padding: 25px;
+}
+
+.img-container {
+  width: 25%;
+  text-align: center;
+}
+
+.info-container {
+  width: 75%;
+}
+
+.convesions {
+    display: flex;
+    justify-content: space-between;
+}

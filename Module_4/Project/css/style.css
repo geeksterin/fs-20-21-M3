@@ -1,28 +1,8 @@
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-
-.logo {
-    max-width: 50px;
-}
-
-.bg-grey {
-    background-color: #E5E5E5;
-}
-
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0px;
-}
-
-.align-center {
-    text-align: center;
 }
 
 .crypto-card {

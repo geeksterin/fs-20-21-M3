@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/details.css" />
     <link rel="icon" type="image/x-icon" href="images/logo.png">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-    <script src="splide.min.js"></script> -->
-    <title>Crypto View</title>
+    <title>Crypto Details</title>
   </head>
-
   <body>
     <header>
       <nav>
@@ -33,24 +30,25 @@
       </nav>
     </header>
 
-    <section class="bg-grey">
-      <div>
-        <h3>CryptoView</h3>
-        <p>A platform to view information about all cryptocurrencies live.</p>
+    <section class="bg-grey crypto-container">
+      <div class="img-container">
+        <img id="logo" src="" alt="Crypto Image" />
       </div>
-      <div>
-        <img
-          src="https://aayusharyan.github.io/cryptoview-project/assets/images/main_image.svg"
-          alt="Banner Image"
-        />
+      <div class="info-container">
+        <h3 id="name"></h3>
+        <div class="convesions">
+          <span id="inr"></span>
+          <span id="usd"></span>
+          <span id="eur"></span>
+          <span id="gbp"></span>
+        </div>
+        <div>
+          <h4>Description:</h4>
+          <p id="description"></p>
+        </div>
       </div>
     </section>
-    <div class="bg-grey">
-      <h3 class="align-center">Top Coins</h3>
-      <div id="coinsContainer"></div>
-    </div>
-
     <script src="./js/common.js"></script>
-    <script defer src="./js/home.js"></script>
+    <script src="js/details.js"></script>
   </body>
 </html>
