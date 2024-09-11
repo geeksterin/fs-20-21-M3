@@ -1,0 +1,5 @@
+React -> Everything is JS (Logic + HTML)
+
+
+Node JS? => Environment to run JS
+npm => Node Package Manager
