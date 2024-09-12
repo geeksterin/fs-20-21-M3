@@ -1,31 +1,21 @@
+<!-- ACTUAL DOM (VANILLA JS) -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>React</title>
 </head>
-<body>
 
+<body>
     <div id="root"></div>
 
-    <script>
-        const rootDiv = document.getElementById("root");
-
-
-        // const h1 = document.createElement("h1")
-        // h1.classList.add("h1-heading")
-        // h1.innerText = "Welcome to ReactJS";
-        // rootDiv.append(h1);
-
-
-        const h1React = React.createElement("h1", { className: "h1-heading" }, "Welcome to ReactJS");
-        ReactDOM.render(h1React, rootDiv);
-
-
-    </script>
+    <script src="./script.js" type="text/babel"></script>
 </body>
+
 </html>

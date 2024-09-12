@@ -1,5 +1,40 @@
+12-09-2024
+
 React -> Everything is JS (Logic + HTML)
 
 
 Node JS? => Environment to run JS
 npm => Node Package Manager
+
+
+React JS JSX <CONVERT> Vanila JS -> Babel (Transpiler)
+Angular <CONVERT> Vanilla JS
+Vue JS <CONVERT> Vanilla JS
+
+React Functional Component : IF a function in ReactJS is returning HTML, then we can not call it like MyFn() rather we call it like <MyFn></MyFn>
+sum() => Normal fn returning any data type of js
+<Sum> </Sum> => React fn returning html
+
+<div>
+</div>
+<p>
+</p>
+
+<br> </br>
+<input> </input>
+<img> </img>
+
+<br />
+<input />
+<img />
+
+React JS Way of writing code JSX (JavaScript and XML)
+
+
+Topics Covered Today :
+1. Seperation of code in JS file
+2. New react way (v18) to render the content on screen using createRoot
+3. JSX along with Variables
+4. Naming conventions
+5. Babel (Transpiler)
+6. Virtual DOM
