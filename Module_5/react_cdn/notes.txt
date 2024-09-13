@@ -38,3 +38,44 @@ Topics Covered Today :
 4. Naming conventions
 5. Babel (Transpiler)
 6. Virtual DOM
+--------------------------------------------------------------------------------
+
+13-09-2024
+
+1. Babel
+2. Live Server
+3. Webpack (Bundler), Minifier
+4. React & ReactDOM
+5. 1 html file with root div
+6. React configuration
+
+Boiler Plate => Ready made configured app for any Framework or library.
+
+Create React App
+Vite
+
+const App = () => {} // App.js
+root.render(<App />) // index.js
+
+
+
+Create React App
+
+npm install -g create-react-app
+create-react-app <project_name>
+cd <project_name>
+npm start
+
+OR
+
+npx create-react-app <project_name>
+cd <project_name>
+npm start
+
+
+
+Vite
+npx create-vite@latest (After this command answer basic questions) type: React + JavaScript
+cd <project_name>
+npm install
+npm run dev
