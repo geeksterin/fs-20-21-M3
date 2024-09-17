@@ -79,3 +79,27 @@ npx create-vite@latest (After this command answer basic questions) type: React +
 cd <project_name>
 npm install
 npm run dev
+
+16-09-2024
+
+Export & Imports are required to use the components from a different file
+
+1. Export -> The component to be used (At the end of the file)
+2. Import -> The component to be used (At the starting of the file)
+
+2 Types of exports
+Default export -> When you have only 1 component / item to export from a file.
+Named export -> When you have multiple components / items to exports from a file.
+
+2 Types of CSS
+
+Modular CSS => Specific to a component / Screen
+Global CSS => Common CSS for the project
+
+17-09-2024
+largeTxt -> 30px (Content.module.css)
+largeTxt -> 80px (Copyright)
+
+
+Props : Dynamic data (arguments) passed to a component in the form of object
+forEach and for() are not allowed inside jsx in react
