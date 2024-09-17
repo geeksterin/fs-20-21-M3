@@ -2,7 +2,7 @@ import Copyright from "./Copyright";
 
 const Header = () => {
     return (
-        <header>
+        <header className="container">
             <ul>
                 <li className="largeTxt">Home</li>
                 <li>About Us</li>

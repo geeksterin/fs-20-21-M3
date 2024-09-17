@@ -1,4 +1,5 @@
 import styles from "./Content.module.css";
+import Card from "./Card";
 
 const Content = () => {
     // const pStyles = {
@@ -7,15 +8,10 @@ const Content = () => {
     // };
 
     return (
-        <main>
-            <h2>Enginners Day</h2>
-            <p className={"blue-txt"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.</p>
-            <p 
-                // className={"large-txt"} // OLD WAY
-                className={styles.largeTxt}
-            >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita ut delectus non sit odit quam eius ratione cumque ab reiciendis blanditiis quibusdam, alias itaque quas mollitia voluptate, nesciunt temporibus.
-            </p>
+        <main className="container">
+           <h1>Videos</h1>
+            <Card imgSrc={""} heading={"My Video"} channelName={"XYZ Youtube channel"} views={50000} />
+            <Card imgSrc={""} heading={"My Video2"} channelName={"ABC Youtube channel"} views={70000} />
         </main>
     )
 };

@@ -44,3 +44,7 @@
 .blue-txt {
   color: blue;
 }
+
+.largeTxt {
+  font-size: 80px;
+}
