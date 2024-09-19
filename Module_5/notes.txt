@@ -103,3 +103,21 @@ largeTxt -> 80px (Copyright)
 
 Props : Dynamic data (arguments) passed to a component in the form of object
 forEach and for() are not allowed inside jsx in react
+
+19-09-2024
+Render => To show something
+Re-render => To show something again with updated values
+
+ let [variableName, setterFunction] = useState(initial-value)
+
+State => Manages the internal data of the component
+Props => Are received form outside the component
+
+Hooks => Special functions in react written to perform the updates or any side effect
+
+useState
+useEffect
+useLayout
+useCallback
+useMemo
+etc
