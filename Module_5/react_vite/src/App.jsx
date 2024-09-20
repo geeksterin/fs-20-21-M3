@@ -1,105 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-import Copyright from './Copyright'
+import Panel from './components/20-09-2024/Panel/Panel';
 
 const App = () => {
-  // console.log("App component rendered");
-  const [counter, setCounter] = useState(0); // React JS Variable
-  const [userName, setUserName] = useState("John");
+  const [expandedPanelId, setExpandedPanelId] = useState(0);
 
-  const [year, setYear] = useState(2024);
-
-  // const [bgColor, setBgColor] = useState("#282c34");
-  const [colors, setColors] = useState({
-    bgColor: "#282c34",
-    fontColor: "#ffffff"
-  });
-
-  const onDecreaseButtonClick = () => {
-    if (counter !== 0) {
-      setCounter(counter - 1);
-    }
-  };
-
-  const onIncreaseButtonClick = () => {
-    // counter++;
-    setCounter(counter + 1);
-  };
-
-  const onResetButtonClick = () => {
-    setCounter(0);
-  };
-
-  const handleToggleChange = () => {
-    if (userName === "John") {
-      setUserName("Alex")
-    } else {
-      setUserName("John");
-    }
-  }
-
-  const onDarkThemeClick = () => {
-    // setBgColor("#282c34");
-    setColors({
-      bgColor: "#282c34",
-      fontColor: "#ffffff"
-    })
-    console.log("Dark theme clicked")
-  }
-
-  const onLightThemeClicked = () => {
-    // setBgColor("#ffffff");
-    setColors({
-      bgColor: "#ffffff",
-      fontColor: "#282c34"
-    })
-    console.log("Light theme clicked")
-  };
-
-  const onDecreaseYearClick = () => { 
-    setYear(year - 1);
-  };
-
-  const onIncreaseYearClick = () => { 
-    setYear(year + 1);
+  const handleBtnClick = (id) => {
+    // if(isExpanded) {
+    //     setExpanded(false)
+    // } else {
+    //     setExpanded(true)
+    // }
+    // setExpanded(!isExpanded);
+    setExpandedPanelId(id);
   };
 
   return (
-    <div style={{
-      backgroundColor: colors.bgColor,
-      color: colors.fontColor,
-      width: "100vw",
-      height: "100vh"
-    }}>
-      <h1>Counter App</h1>
-      <div style={{ border: "1px solid black" }}>
-        <button onClick={onDecreaseButtonClick}>Decrease (-)</button>
-        <h2>{counter}</h2>
-        <button onClick={onIncreaseButtonClick}>Increase (+)</button>
-        <button onClick={onResetButtonClick}>Reset</button>
-      </div>
+    <div>
+      <h1>Accordion</h1>
 
-      <div style={{ border: "1px solid black" }}>
-        UserName : {userName}
-        <button onClick={handleToggleChange}>Toggle Name</button>
+      <div className='accordion'>
+        <Panel id={1} expandedPanelId={expandedPanelId} text={"This is a very long content part for panel number 1"} handleBtnClick={handleBtnClick} />
+        <Panel id={2} expandedPanelId={expandedPanelId} text={"This is a very long content part for panel number 2"} handleBtnClick={handleBtnClick} />
+        <Panel id={3} expandedPanelId={expandedPanelId} text={"This is a very long content part for panel number 3"} handleBtnClick={handleBtnClick} />
       </div>
-      Dark
-      <input onClick={onDarkThemeClick} type='radio' name='theme' />
-      Light
-      <input onClick={onLightThemeClicked} type='radio' name='theme' />
-
-      <div>
-        <button onClick={onDecreaseYearClick}>Decrease Year</button>
-        <button onClick={onIncreaseYearClick}>Increase Year</button>
-      </div>
-      <Copyright year={year} />
-      <Copyright year={year} />
-      <Copyright year={year} />
-      <Copyright year={year} />
-      <Copyright year={year} />
     </div>
   )
 }

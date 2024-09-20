@@ -33,18 +33,14 @@
   }
 }
 
-.card {
-  padding: 2em;
+.panel {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
-.blue-txt {
-  color: blue;
-}
-
-.largeTxt {
-  font-size: 80px;
+.accordion {
+  border: 2px solid grey;
+  padding: 10px;
+  border-radius: 10px;
 }

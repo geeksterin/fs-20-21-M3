@@ -121,3 +121,8 @@ useLayout
 useCallback
 useMemo
 etc
+
+20-09-2024
+Conditional Rendering
+
+Lifting up the state => Passing the data from child to parent, we pass a fn from parent to child as a prop, and the fn is called inside the child
