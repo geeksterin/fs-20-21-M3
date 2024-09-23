@@ -1,0 +1,23 @@
+.container {
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.title {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.address {
+    margin: 5px;
+}
+
+.cuisine-container {
+    background: #e7dfdf;
+    padding: 10px;
+}
+
+.cuisine {
+    padding: 5px;
+}
