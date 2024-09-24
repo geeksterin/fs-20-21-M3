@@ -126,3 +126,12 @@ etc
 Conditional Rendering
 
 Lifting up the state => Passing the data from child to parent, we pass a fn from parent to child as a prop, and the fn is called inside the child
+
+24-09-2024
+useEffect : hook to handle side effects
+
+useEffect can be used in cases, where i want the operation to happen only 1 time in a component throughtout the lifecycle
+Syntax : 
+useEffect(callbackFn, dependencyArray)
+
+If the values in the dependency array changes, it will run the callbackFn inside useEffect hook.

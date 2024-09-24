@@ -12,7 +12,8 @@ const RestaurantCard = (props) => {
                     {
                         [...new Array(5)].map((item, index) => {
                             return <i
-                                class={
+                                key={"start_icon_"+index}
+                                className={
                                     `fa-${parseInt(props.rating) >= index + 1 ? "solid" : "regular"
                                     } fa-star`
                                 }
@@ -21,7 +22,7 @@ const RestaurantCard = (props) => {
                     }
                 </span>
             </div>
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
             <span className={styles.address}>{props.address}</span>
             <div>
                 {
@@ -34,7 +35,7 @@ const RestaurantCard = (props) => {
             </div>
             <div className={styles["cuisine-container"]}>
                 <div>
-                    <i class="fa-solid fa-utensils"></i>
+                    <i className="fa-solid fa-utensils"></i>
                     <span className={styles.cuisine}>{props.type_of_food}</span>
                 </div>
                 <a href="/menu">Visit Menu</a>

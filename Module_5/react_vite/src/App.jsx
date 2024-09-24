@@ -1,31 +1,54 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
-import Panel from './components/20-09-2024/Panel/Panel';
-
 const App = () => {
-  const [expandedPanelId, setExpandedPanelId] = useState(0);
 
-  const handleBtnClick = (id) => {
-    // if(isExpanded) {
-    //     setExpanded(false)
-    // } else {
-    //     setExpanded(true)
-    // }
-    // setExpanded(!isExpanded);
-    setExpandedPanelId(id);
-  };
+  const [userName, setUserName] = useState("");
+  const [address, setAddress] = useState("");
+  const [age, setAge] = useState(0);
+  const [premium, setPremium] = useState(0);
+
+  useEffect(() => {
+    setPremium(age * 2.5 * 10000); // This line will run everytime when the value of age changes
+  }, [age]); // Updation
+
+  // useEffect(() => {}.[userName]);
 
   return (
-    <div>
-      <h1>Accordion</h1>
+    <>
+      <h1>use Effect Demo</h1>
+      <form>
+        <div>
+          <label htmlFor='name'>Name</label>
+          <input onChange={(e) => {
+            setUserName(e.target.value)
+          }} type='text' id='name' />
+        </div>
 
-      <div className='accordion'>
-        <Panel id={1} expandedPanelId={expandedPanelId} text={"This is a very long content part for panel number 1"} handleBtnClick={handleBtnClick} />
-        <Panel id={2} expandedPanelId={expandedPanelId} text={"This is a very long content part for panel number 2"} handleBtnClick={handleBtnClick} />
-        <Panel id={3} expandedPanelId={expandedPanelId} text={"This is a very long content part for panel number 3"} handleBtnClick={handleBtnClick} />
+        <div>
+          <label htmlFor='address'>Address</label>
+          <input onChange={(e) => {
+            setAddress(e.target.value)
+          }} type='text' id='address' />
+        </div>
+
+        <div>
+          <label htmlFor='age'>Age</label>
+          <input onChange={(e) => {
+            setAge(Number(e.target.value))
+          }} type='number' id='age' />
+        </div>
+
+
+
+      </form>
+      <div>
+        <h3>{userName}</h3>
+        <h3>{address}</h3>
+        <h3>{age}</h3>
+        <h3>Policy Premium : Rs {premium}</h3>
       </div>
-    </div>
+    </>
   )
 }
 

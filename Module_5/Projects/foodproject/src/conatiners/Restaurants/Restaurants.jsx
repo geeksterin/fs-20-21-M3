@@ -411,13 +411,12 @@ const Restaurants = () => {
                 {
                     restaurantList
                         .filter(onRestaurantFilter)
-                        .map((restaurantData) => {
+                        .map((restaurantData, index) => {
                             // console.log(restaurantData)
                             // return <RestaurantCard data={restaurantData} />
-                            return <RestaurantCard {...restaurantData} />
+                            return <RestaurantCard key={restaurantData._id} {...restaurantData} />
                         })
                 }
-
             </div>
         </>
     )
