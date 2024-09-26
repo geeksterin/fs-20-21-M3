@@ -1,53 +1,35 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import QuestionCard from './components/26-09-2024/QuestionCard/QuestionCard';
 
 const App = () => {
 
-  const [userName, setUserName] = useState("");
-  const [address, setAddress] = useState("");
-  const [age, setAge] = useState(0);
-  const [premium, setPremium] = useState(0);
+  const [questions, setQuestions] = useState([]);
+  // fetch("https://opentdb.com/api.php?amount=10&type=multiple")
+  //   .then(res => res.json())
+  //   .then(data => console.log(data))
+  //   .catch(err => console.log("ERROR", err))
+
+  const fetchQuestions = async () => {
+    const res = await fetch("https://opentdb.com/api.php?amount=10&type=multiple")
+    const data = await res.json();
+    console.log(data.results)
+    setQuestions(data.results);
+  };
 
   useEffect(() => {
-    setPremium(age * 2.5 * 10000); // This line will run everytime when the value of age changes
-  }, [age]); // Updation
+    fetchQuestions();
+  }, []); // Mounting phase
 
-  // useEffect(() => {}.[userName]);
 
   return (
     <>
-      <h1>use Effect Demo</h1>
-      <form>
-        <div>
-          <label htmlFor='name'>Name</label>
-          <input onChange={(e) => {
-            setUserName(e.target.value)
-          }} type='text' id='name' />
-        </div>
-
-        <div>
-          <label htmlFor='address'>Address</label>
-          <input onChange={(e) => {
-            setAddress(e.target.value)
-          }} type='text' id='address' />
-        </div>
-
-        <div>
-          <label htmlFor='age'>Age</label>
-          <input onChange={(e) => {
-            setAge(Number(e.target.value))
-          }} type='number' id='age' />
-        </div>
-
-
-
-      </form>
-      <div>
-        <h3>{userName}</h3>
-        <h3>{address}</h3>
-        <h3>{age}</h3>
-        <h3>Policy Premium : Rs {premium}</h3>
-      </div>
+      <h1>APIs - Quiz</h1>
+      {
+        questions.map((data, index) => {
+          return <QuestionCard key={`question_${index}`} index={index} {...data} />
+        })
+      }
     </>
   )
 }

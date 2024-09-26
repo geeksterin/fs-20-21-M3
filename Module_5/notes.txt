@@ -135,3 +135,37 @@ Syntax :
 useEffect(callbackFn, dependencyArray)
 
 If the values in the dependency array changes, it will run the callbackFn inside useEffect hook.
+
+26-09-2024
+Initial Render (Mounting Phase)
+1. setTimeout => 3 sec => setter fn call => Re-render
+
+Updation Phase
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+2. setTimeout =>  3 sec => setter fn call => Re-render
+................
+
+
+API (Application Programming Interface) => Connector / bridge between 2 parties
+
+Front End (Client)
+Back End (Server)
+
+Back End (Server)
+Back End (Server)
+
+Data Type : JSON
+
+Methods of APIs
+1. GET => Get the data from server
+2. POST => Send some data to the server
+
+Request -> Response
