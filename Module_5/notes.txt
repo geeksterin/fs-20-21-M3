@@ -165,7 +165,19 @@ Back End (Server)
 Data Type : JSON
 
 Methods of APIs
-1. GET => Get the data from server
-2. POST => Send some data to the server
+1. GET => Get the data from server (Get the list of products, social media feeds, user profile etc)
+2. POST => Send some data to the server (Submitting enquriy form, User Registration / Signup, Creating a new post / blog, Placing an order)
 
 Request -> Response
+
+27-09-2024
+
+Pre requisits To call an API
+1. API URL / Link  (API End Point)
+2. HTTP Method (GET / POST etc)
+3. Request Body : {}
+
+API => HTTP Request
+2 Parts
+    1. Header
+    2. Body
