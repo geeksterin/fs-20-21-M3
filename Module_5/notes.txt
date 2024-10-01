@@ -181,3 +181,38 @@ API => HTTP Request
 2 Parts
     1. Header
     2. Body
+
+01-10-2024
+
+Hosting / Deploying => Putting the webapp on internet for use
+
+1 Babel
+2 Webpack (Merge and minify)
+
+
+2 Options to deploy
+1. Manually build the code and upload the build on hosting platform
+2. Find a hosting website that builds the code for us and upload it
+
+
+// Fin the index with the help of id
+array.splice(<index of item to perfrom operation>, <no of items to delete>, ...<item to insert>)
+
+    
+<button onClick={() => onDelete(uniqueId)}>Delete</button>
+
+
+showMessage("Item addes successfully")
+
+Sugar abc123
+Flour xyz234
+Chocolate fd2
+Soap gf5
+
+Sugar 0
+Chocolate 1
+Soap 2
+
+Sugar abc123
+Chocolate fd2
+Soap gf5

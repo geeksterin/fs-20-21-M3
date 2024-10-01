@@ -1,12 +1,10 @@
-import { useState, useEffect } from 'react'
-import axios from "axios";
 import './App.css'
-import AssignmentDay5CW from './components/30-09-2024/Day5-CW/Assignment';
+import RefsDemo from './components/01-10-2024/RefsDemo';
 
 const App = () => {
   return (
     <>
-      <AssignmentDay5CW />
+      <RefsDemo />
     </>
   )
 }
