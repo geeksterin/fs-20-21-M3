@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -6,7 +7,7 @@ const Layout = () => {
     <div>
       <Header />
       {/* DYNAMICALLY SWITCH THE CONTENT PART */}
-      CONTENT SECTION TO APPEAR HERE
+      <Outlet />
       <Footer />
     </div>
   );

@@ -216,3 +216,32 @@ Soap 2
 Sugar abc123
 Chocolate fd2
 Soap gf5
+
+05-10-2024
+
+2 Types of routing
+1. Server side routing => Server renders every page (The page loads)
+2. Client side routing => Client already have all the pages with them and they just load it on screen ( The page doesn't loads)
+
+
+Dynamic Route
+
+/geekster-in/useRef-Callback-a34bcc59724142f2ab48172aeed1c4ab
+
+<base route>/<dynamic-route>
+
+
+/hotels/hotel-details/hotelId=asldfjas
+
+
+/hotel/hotel-details/:hotelId
+/hotel/hotel-details/1
+/hotel/hotel-details/2
+/hotel/hotel-details/3
+/hotel/hotel-details/5465
+
+
+
+2 Screens
+1. Listing : Call the listing api, run map, create links dynamically
+2. Details : Call the details api by passing the id of the item
