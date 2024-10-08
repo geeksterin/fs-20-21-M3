@@ -17,7 +17,7 @@ const TeamList = (props) => {
                     })
                 }
 
-                Average Age : 0 <br />
+                Average Age : {props.averageAge} <br />
                 <button onClick={() => props.dispatch({ type: "CALCULATE_AVERAGE_AGE", payload: {} })}>Calculate Average Age</button>
                 <button onClick={() => props.dispatch({ type: "SORT_LIST_BY_AGE", payload: {} })}>Sort by age</button>
             </div>
