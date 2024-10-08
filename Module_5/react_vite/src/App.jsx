@@ -2,42 +2,24 @@ import "./App.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import AboutUs from "./components/04-10-2024/AboutUs";
-import ContactUs from "./components/04-10-2024/ContactUs";
-import Home from "./components/04-10-2024/Home";
 import NotFound from "./components/04-10-2024/NotFound";
-import Layout from "./components/04-10-2024/Layout";
-import HotelDetails from "./components/04-10-2024/HotelDetails";
+import Dashboard from "./components/08-10-2024/Dashboard";
+import { useState } from "react";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: <Dashboard />,
       errorElement: <NotFound />,
-      children: [
-        {
-          path: "/",
-          element: <Home />
-        },
-        {
-          path: "/about-us",
-          element: <AboutUs />,
-        },
-        {
-          path: "/contact-us",
-          element: <ContactUs />,
-        },
-        {
-          path: "/hotel/:hotelId",
-          element: <HotelDetails />
-        }
-      ]
     },
   ]);
 
+  const [userName, setUserName] = useState("A");
+
   return (
     <>
+    <h1>App</h1>
       <RouterProvider router={router} />
     </>
   );

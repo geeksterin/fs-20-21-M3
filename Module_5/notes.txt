@@ -245,3 +245,24 @@ Dynamic Route
 2 Screens
 1. Listing : Call the listing api, run map, create links dynamically
 2. Details : Call the details api by passing the id of the item
+
+08-10-2024
+// Local Pagination
+
+const arr = []; //100 items
+
+0-20 => Page 1
+21-40 => Page 2
+...
+
+arr.slice(21,40).map(() => {})
+
+
+API Based Pagination
+axios.get("ab.com/data?pageNo=2")
+arr.map(() => {})
+
+const userObj = arr.find(data => data.addhaarNo === aadhaarNo)
+if(userObj) {
+    // Show data
+}
