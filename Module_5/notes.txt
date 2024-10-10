@@ -266,3 +266,15 @@ const userObj = arr.find(data => data.addhaarNo === aadhaarNo)
 if(userObj) {
     // Show data
 }
+
+10-10-2024
+Process to 
+1. Create a context (createContext()) - Done
+2. Attach / Provide the context to the app tree (<Context.Provider></Context.Provider>) - Done
+3. Use the context to get the data anywhere in the tree (useContext(Context)) - Done
+
+
+Trello Clone :
+1. ContextAPI
+2. UseReducer
+3. Drag & Drop Functionality

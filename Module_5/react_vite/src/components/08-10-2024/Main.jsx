@@ -14,7 +14,11 @@ const Main = () => {
     });
 
     const onBtnClick = () => {
-        ctx.setUserName("B");
+        // ctx.setUserName("B");
+        ctx.dispatch({
+            type: "SET_USERNAME",
+            payload: "B"
+        });
     };
 
     return (

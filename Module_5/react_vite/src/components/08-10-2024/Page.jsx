@@ -10,7 +10,7 @@ const Page = () => {
             <h3>Page</h3>
             <ul>
                 {
-                    ctx.todos.map((data) => <li key={data.id}>{data.title}</li>)
+                    ctx.todos?.map((data) => <li key={data.id}>{data.title}</li>)
                 }
             </ul>
             <Profile />

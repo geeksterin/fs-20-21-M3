@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useState, createContext } from "react";
+import { useState, createContext, useReducer } from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -26,10 +26,38 @@ const App = () => {
   //   todos: []
   // })
 
+  const initState = {
+    userName: "",
+    todos: [],
+    products: []
+  }
+
+  const reducerFn = (state, action) => {
+    switch (action.type) {
+      case "SET_USERNAME":
+        return {
+          ...state,
+          userName: action.payload
+        };
+      case "ADD_TODO":
+        return {
+          ...state
+        }
+      case "REMOVE_TODO":
+        return {
+          ...state
+        }
+      default:
+        return state;
+    }
+  };
+
+  const [state, dispatch] = useReducer(reducerFn, initState);
+
   return (
     <>
       <h1>App</h1>
-      <MyContext.Provider value={{ userName, setUserName, todos, setTodos }}>
+      <MyContext.Provider value={{ state, dispatch }}>
         {/* MyContext.Provider => Component */}
         <Dashboard />
       </MyContext.Provider>
