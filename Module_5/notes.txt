@@ -278,3 +278,39 @@ Trello Clone :
 1. ContextAPI
 2. UseReducer
 3. Drag & Drop Functionality
+
+14-10-2024
+
+Authentication => Validting a user with the help of username and password
+Authorization => Having / checking the permissions of a user
+
+environment variables
+
+lodash -> Utility
+dayjs -> Date Utility
+
+15-10-2024
+
+Blog App
+
+1. Login / Signup => Google Login (firebase/auth)
+2. Create Blog => Form (Database) (firebase/firestore)
+3. List Blog => List of cards (firebase/firestore)
+
+Packges required
+
+firebase
+react-router
+context (Built In)
+
+User Journey / User Flow
+
+1st Time journey : Login/Signup -> List Blog Screen
+Repeating user journey : List Blog Screen
+
+
+Login/Signup -> List Blog Screen -> Logout (Click on Logout) -> Login/Signup
+Login/Signup -> List Blog Screen (Click on Create Blog Link) -> Create Blog (Successful blog creation) -> List Blog Screen 
+
+Protected Routes => Availalbe to an authenticated user only (Blog list, Blog Create)
+Public Routes => Available to everyone without authentication / authorization (Login)
