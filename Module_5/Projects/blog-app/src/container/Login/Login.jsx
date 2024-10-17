@@ -15,12 +15,13 @@ const Login = (props) => {
     const onGoogleLogin = async () => {
         try {
             const res = await signInWithPopup(auth, googleAuthProvider);
+            console.log(res.user)
             // Login is successful
             blogCtx.setState({
                 ...blogCtx.state,
                 user: res.user
             });
-            localStorage.setItem("user", JSON.stringify({ accessToken: res.user.stsTokenManager, ...res.user }))
+            localStorage.setItem("user", JSON.stringify({ accessToken: res.user.stsTokenManager.accessToken, ...res.user }))
             // Redirect the user to blog list screen
             navigate("/");
 

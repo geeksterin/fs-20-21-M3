@@ -314,3 +314,18 @@ Login/Signup -> List Blog Screen (Click on Create Blog Link) -> Create Blog (Suc
 
 Protected Routes => Availalbe to an authenticated user only (Blog list, Blog Create)
 Public Routes => Available to everyone without authentication / authorization (Login)
+
+
+Data Saving
+1. Temporary : Variables
+2. Permanent : Database
+
+
+Database (Firebase console)
+    Collection (Code -> collection())
+        Store Data (Document)
+
+C => Create Blog
+R => List Blog
+U => Edit Blog
+D => Delete Blog
