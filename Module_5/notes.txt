@@ -329,3 +329,23 @@ C => Create Blog
 R => List Blog
 U => Edit Blog
 D => Delete Blog
+
+
+18-10-2024
+Optimization
+Preventing re-renders when the prop doen't changes
+1. Strings, Number, Booleans => memo(<CHILD_COMPONENT />)
+2. Functions => useCallback(function to be passed as prop)
+3. Array => 
+
+
+useMemo => It calls the wrapped fn and caches its return value
+dependency array determines how many times the function should be called
+[] => Run only once and cache the value
+[variable] => Run every time the variable changes
+
+
+
+useCallback => Caches/Memoize the function definition
+useMemo => Caches/Memoize the function's return value
+memo =>  HOC (Interview Question)
