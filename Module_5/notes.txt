@@ -349,3 +349,46 @@ dependency array determines how many times the function should be called
 useCallback => Caches/Memoize the function definition
 useMemo => Caches/Memoize the function's return value
 memo =>  HOC (Interview Question)
+
+21-10-2024
+
+Context API + useReducer => Redux
+
+3 Components of redux
+
+Actions : Actions are plain objects which contains 2 k-v pair (type : ADD_ITEM, REMOVE_ITEM, payload: DATA TO BE USED WHILE PERFORMING THE OPERATION)
+Reducers : Pure functions which contains business logic and used to update the state / store
+State / Store : A common storage area for whole application (js object)
+
+Slice => Actions + Reducer
+
+const store = {
+    pendingtodolist: [],
+    completedtodolist: [],
+    .....
+}
+
+Action => 
+{
+    type: "MOVE_ITEM_TO_COMPLETED",
+    payload: {
+        todoid: 1
+    }
+}
+
+Reducer =>
+
+    const reducer = (state,action) => {
+        switch(action.type) {
+            case "MOVE_ITEM_TO_COMPLETED":
+                return {
+                    ...state,
+                    completedtodolist: [...state.todo,...]
+                }
+            case "REMOVE_FROM_COMPLETED":
+                return {
+                    ...state,
+
+                }
+        }
+    }
