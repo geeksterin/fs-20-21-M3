@@ -392,3 +392,73 @@ Reducer =>
                 }
         }
     }
+
+22-10-2024
+
+ReactJS Lifecycle 
+Phases of lifecycle : Mounting, updating, unmounting
+
+
+useEffect(() => {},[]); => componentDidMount()
+useEffect(() => {}); => componentDidUpdate()
+useEffect(() => { return () => {} },[]) => componentWillUnmount()
+
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+      values: []
+    }
+    console.log("Constructor");
+  }
+
+  // React methods : User defined, Pre- defined method
+
+  onBtnClick = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+  }
+
+  componentWillUnmount() {
+    console.log("Component will unmount")
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Component did update")
+  }
+
+  componentDidMount() {
+    // API Calls on load etc
+    console.log("Component did mount")
+  }
+
+  render() {
+    // console.log(this.props)
+    console.log("Render")
+    return (
+      <>
+        <h1>React class based component</h1>
+        {
+          this.state.counter
+        }
+        <button onClick={this.onBtnClick}>Increase Counter</button>
+      </>
+    )
+  }
+
+}
+
+23-10-2024 
+Project : Contacts App
+
+Modules
+
+1. Save Contact (Form)
+2. List Contact (List)
+    2.1 Fav contact list
+3. All & Fav Contacts Count (Card)
+4. Search
