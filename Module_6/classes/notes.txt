@@ -1,0 +1,13 @@
+10-11-2024
+Modules : Libraries/packages which provies utility functions
+2 Types
+    1. Built In
+    2. Third party -> npmjs.com
+
+utf-8
+
+Logs : 
+
+Paths
+    Relative : ../picutres/photo.jpg
+    Absolute : D:/users/pictures/photo.jpg
