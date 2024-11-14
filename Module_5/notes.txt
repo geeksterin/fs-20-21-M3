@@ -245,3 +245,220 @@ Dynamic Route
 2 Screens
 1. Listing : Call the listing api, run map, create links dynamically
 2. Details : Call the details api by passing the id of the item
+
+08-10-2024
+// Local Pagination
+
+const arr = []; //100 items
+
+0-20 => Page 1
+21-40 => Page 2
+...
+
+arr.slice(21,40).map(() => {})
+
+
+API Based Pagination
+axios.get("ab.com/data?pageNo=2")
+arr.map(() => {})
+
+const userObj = arr.find(data => data.addhaarNo === aadhaarNo)
+if(userObj) {
+    // Show data
+}
+
+10-10-2024
+Process to 
+1. Create a context (createContext()) - Done
+2. Attach / Provide the context to the app tree (<Context.Provider></Context.Provider>) - Done
+3. Use the context to get the data anywhere in the tree (useContext(Context)) - Done
+
+
+Trello Clone :
+1. ContextAPI
+2. UseReducer
+3. Drag & Drop Functionality
+
+14-10-2024
+
+Authentication => Validting a user with the help of username and password
+Authorization => Having / checking the permissions of a user
+
+environment variables
+
+lodash -> Utility
+dayjs -> Date Utility
+
+15-10-2024
+
+Blog App
+
+1. Login / Signup => Google Login (firebase/auth)
+2. Create Blog => Form (Database) (firebase/firestore)
+3. List Blog => List of cards (firebase/firestore)
+
+Packges required
+
+firebase
+react-router
+context (Built In)
+
+User Journey / User Flow
+
+1st Time journey : Login/Signup -> List Blog Screen
+Repeating user journey : List Blog Screen
+
+
+Login/Signup -> List Blog Screen -> Logout (Click on Logout) -> Login/Signup
+Login/Signup -> List Blog Screen (Click on Create Blog Link) -> Create Blog (Successful blog creation) -> List Blog Screen 
+
+Protected Routes => Availalbe to an authenticated user only (Blog list, Blog Create)
+Public Routes => Available to everyone without authentication / authorization (Login)
+
+
+Data Saving
+1. Temporary : Variables
+2. Permanent : Database
+
+
+Database (Firebase console)
+    Collection (Code -> collection())
+        Store Data (Document)
+
+C => Create Blog
+R => List Blog
+U => Edit Blog
+D => Delete Blog
+
+
+18-10-2024
+Optimization
+Preventing re-renders when the prop doen't changes
+1. Strings, Number, Booleans => memo(<CHILD_COMPONENT />)
+2. Functions => useCallback(function to be passed as prop)
+3. Array => 
+
+
+useMemo => It calls the wrapped fn and caches its return value
+dependency array determines how many times the function should be called
+[] => Run only once and cache the value
+[variable] => Run every time the variable changes
+
+
+
+useCallback => Caches/Memoize the function definition
+useMemo => Caches/Memoize the function's return value
+memo =>  HOC (Interview Question)
+
+21-10-2024
+
+Context API + useReducer => Redux
+
+3 Components of redux
+
+Actions : Actions are plain objects which contains 2 k-v pair (type : ADD_ITEM, REMOVE_ITEM, payload: DATA TO BE USED WHILE PERFORMING THE OPERATION)
+Reducers : Pure functions which contains business logic and used to update the state / store
+State / Store : A common storage area for whole application (js object)
+
+Slice => Actions + Reducer
+
+const store = {
+    pendingtodolist: [],
+    completedtodolist: [],
+    .....
+}
+
+Action => 
+{
+    type: "MOVE_ITEM_TO_COMPLETED",
+    payload: {
+        todoid: 1
+    }
+}
+
+Reducer =>
+
+    const reducer = (state,action) => {
+        switch(action.type) {
+            case "MOVE_ITEM_TO_COMPLETED":
+                return {
+                    ...state,
+                    completedtodolist: [...state.todo,...]
+                }
+            case "REMOVE_FROM_COMPLETED":
+                return {
+                    ...state,
+
+                }
+        }
+    }
+
+22-10-2024
+
+ReactJS Lifecycle 
+Phases of lifecycle : Mounting, updating, unmounting
+
+
+useEffect(() => {},[]); => componentDidMount()
+useEffect(() => {}); => componentDidUpdate()
+useEffect(() => { return () => {} },[]) => componentWillUnmount()
+
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+      values: []
+    }
+    console.log("Constructor");
+  }
+
+  // React methods : User defined, Pre- defined method
+
+  onBtnClick = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+  }
+
+  componentWillUnmount() {
+    console.log("Component will unmount")
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Component did update")
+  }
+
+  componentDidMount() {
+    // API Calls on load etc
+    console.log("Component did mount")
+  }
+
+  render() {
+    // console.log(this.props)
+    console.log("Render")
+    return (
+      <>
+        <h1>React class based component</h1>
+        {
+          this.state.counter
+        }
+        <button onClick={this.onBtnClick}>Increase Counter</button>
+      </>
+    )
+  }
+
+}
+
+23-10-2024 
+Project : Contacts App
+
+Modules
+
+1. Save Contact (Form)
+2. List Contact (List)
+    2.1 Fav contact list
+3. All & Fav Contacts Count (Card)
+4. Search
