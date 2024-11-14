@@ -11,3 +11,6 @@ Logs :
 Paths
     Relative : ../picutres/photo.jpg
     Absolute : D:/users/pictures/photo.jpg
+----------------------------------------------------------------------
+11-11-2024
+Create your own npm package
