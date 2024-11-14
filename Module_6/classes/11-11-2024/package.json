@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "divyansh_project_first": "^1.0.2",
+    "node-wifi": "^2.0.16"
+  }
+}
