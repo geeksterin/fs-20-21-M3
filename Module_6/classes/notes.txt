@@ -14,3 +14,14 @@ Paths
 ----------------------------------------------------------------------
 11-11-2024
 Create your own npm package
+npm login
+npm publish
+
+15-11-2024
+Ports
+21 => FTP
+443 => HTTPS etc
+
+1. Create a software server using nodejs (built in module - http)
+2. Open a port for requests (8080)
+3. How will server know if a requests is received? Event listener - callback (logic and response)
