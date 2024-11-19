@@ -38,3 +38,14 @@ Server building
 Expressjs
 
 NOTE: SEQUENCE OF APIS / CODE IS VERY IMPORTANT IN EXPRESS JS
+---------------------------------------------------------------------
+19-11-2024
+1. URL Pram & Query Param
+2. Middleware
+
+Types of middlewares (5)
+1. Custom middleware (Wirte your own fn)
+2. Error handling middleware (err, req, res, next) => {}
+3. App level middleware
+4. Route level middleware
+5. Third party middleware
