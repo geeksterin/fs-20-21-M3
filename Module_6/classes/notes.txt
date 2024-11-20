@@ -44,8 +44,28 @@ NOTE: SEQUENCE OF APIS / CODE IS VERY IMPORTANT IN EXPRESS JS
 2. Middleware
 
 Types of middlewares (5)
-1. Custom middleware (Wirte your own fn)
-2. Error handling middleware (err, req, res, next) => {}
-3. App level middleware
-4. Route level middleware
-5. Third party middleware
+1. Application level middleware
+2. Router-level middleware
+3. Error handling middleware - (err,req,res,next)
+4. Built in middleware - express.json()
+5. Third Party middleware - responseTime, morgan etc
+---------------------------------------------------------------------
+20-11-2024
+Loading Image / File : Inform express to scan all the files under "images" folder and match it with the requested api url, if the filename matches then its not an api, its a file 
+
+URL Shortner App APIs
+1. POST => Long URL as input, give short URL as output
+2. GET => Redirect the user from short to long URL
+
+1. Which long url?
+2. If multiple short urls are available?
+
+[
+    {
+        shortUrl: "asdfea32",
+        longUrl: "http://longurl.com/sfdsdf.23rw3"
+    }
+]
+
+schedulers
+cron jobs
