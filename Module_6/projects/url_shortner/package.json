@@ -1,0 +1,21 @@
+{
+  "name": "url_shortner",
+  "version": "1.0.0",
+  "description": "URL Shortner app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apis",
+    "url_shortner"
+  ],
+  "author": "Divyansh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nanoid": "^5.0.8"
+  }
+}
