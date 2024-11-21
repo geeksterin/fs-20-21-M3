@@ -6,6 +6,7 @@ import { nanoid } from "nanoid";
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded());
 
 const isUrlValid = (url) => {
     try {
@@ -16,10 +17,16 @@ const isUrlValid = (url) => {
     }
 };
 
+app.get("/", (req, res) => {
+    // console.log(import.meta.dirname + "\\form.html")
+    res.sendFile(import.meta.dirname + "\\form.html");
+});
+
 app.post("/shorten-url", (req, res) => {
     /**
      * How to shorten the URL?
      */
+    console.log(req.body);
 
     try {
         // Validat url

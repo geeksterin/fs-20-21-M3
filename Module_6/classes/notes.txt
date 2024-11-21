@@ -69,3 +69,11 @@ URL Shortner App APIs
 
 schedulers
 cron jobs
+--------------------------------------------------
+21-11-2024
+
+Rendring HTML through express js
+MVC Architecture
+Database (Introduction & Queries)
+
+Microservices
