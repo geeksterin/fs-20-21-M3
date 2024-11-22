@@ -77,3 +77,154 @@ MVC Architecture
 Database (Introduction & Queries)
 
 Microservices
+
+---------------------------------------------------
+22-11-2024
+MQL (Mongo Query Language)
+
+
+Comparision Operators
+
+== --> $eq
+>  --> $gt
+>= --> $gte
+<  --> $lt
+<= --> $lte
+!= --> $ne
+
+Logical Operators
+&& --> $and
+|| --> $or
+!  --> $not
+
+
+Read
+Syntax : 
+db.<collection-name>.find(<CONDITION>) // Find all data
+
+Q. Write a query to fetch all products
+db.products.find()
+
+Q. Write a query to find product whose price is 999
+db.products.find({
+    price: 999
+})
+
+db.products.find({
+    price: {
+        $eq: 999
+    }
+})
+
+Q. Find all products whose price is less than 500 ($lt: 500)
+db.products.find({
+    price: {
+        $lt: 500
+    }
+})
+
+Q. Find all products whose price is greater than 1000
+db.products.find({
+    price: {
+        $gt: 1000
+    }
+})
+
+Q. Find all the products with minimum rating of 4.5
+db.products.find({
+    rating: {
+        $gte: 4.5
+    }
+})
+
+Q. Find all the products whose price is between 500 and 600
+db.products.find({
+    $and: [
+        {
+            price: {
+                $gt: 500
+            }
+        },
+        {
+            price: {
+                $lt: 600
+            }
+        }
+    ]
+})
+
+Q. Find all the products whose rating is between 4 and 4.5
+db.products.find({
+    $and: [
+        {
+            rating: {
+                $gt: 4
+            }
+        },
+        {
+            rating: {
+                $lt: 4.5
+            }
+        }
+    ]
+})
+
+Q. Find all the products with minimum rating 4 and prices less than or equal to 500
+db.products.find({
+    $and: [
+        {
+            rating: {
+                $gt: 4
+            }
+        },
+        {
+            price: {
+                $lte: 500
+            }
+        }
+    ]
+}).count()
+
+Q. Find all the products which has price less than 450 or minimum rating of 4.8
+db.products.find({
+    $or: [
+        {
+            price: {
+                $lt: 450
+            }
+        },
+        {
+            rating: {
+                $gte: 4.8
+            }
+        }
+    ]
+})
+
+Q. Print total no of available documents in products collection
+db.products.find().count()
+
+Q. Insert a new product in db
+insertMany([
+    {},
+    {}
+])
+
+db.products.insertOne({
+  title: 'TV 43 Inch',
+  description: 'Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate',
+  price: 799,
+  discountPercentage: 15.34,
+  rating: 4.9,
+  stock: 7,
+  brand: 'sony',
+  category: 'home-decoration',
+  thumbnail: 'https://i.dummyjson.com/data/products/29/thumbnail.webp',
+  images: [
+    'https://i.dummyjson.com/data/products/29/1.jpg',
+    'https://i.dummyjson.com/data/products/29/2.jpg',
+    'https://i.dummyjson.com/data/products/29/3.webp',
+    'https://i.dummyjson.com/data/products/29/4.webp',
+    'https://i.dummyjson.com/data/products/29/thumbnail.webp'
+  ]
+})
